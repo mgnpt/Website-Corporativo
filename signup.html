@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registo – UniFood</title>
+  <style>
+    body{font-family:Inter,system-ui;margin:0;padding:0;background:#fafafa}
+    .container{max-width:400px;margin:60px auto;padding:28px;background:white;border-radius:12px;border:1px solid #eee}
+    h2{text-align:center;margin-top:0}
+    input{width:100%;padding:10px;margin-bottom:12px;border:1px solid #ddd;border-radius:8px}
+    .btn{width:100%;padding:10px;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+    .btn-primary{background:#048045;color:white}
+    .btn-link{display:block;margin-top:12px;text-align:center;color:#048045;text-decoration:none}
+    .btn-home{display:block;margin-top:20px;text-align:center;color:#333;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+
+    <!-- TMR 16/11/2025-->
+
+<div class="container">
+  <h2>Criar Conta</h2>
+
+  <form onsubmit="event.preventDefault();alert('Registo simulado')">
+    <input placeholder="Nome completo" required>
+    <input type="email" placeholder="Email institucional" required>
+    <input type="password" placeholder="Criar palavra-passe" required>
+    <input type="password" placeholder="Confirmar palavra-passe" required>
+    <button class="btn btn-primary">Criar Conta</button>
+  </form>
+
+  <a class="btn-link" href="login.html">Já tenho conta</a>
+
+  <!-- Botão para voltar à página principal -->
+  <a class="btn-home" href="main.html">← Voltar à página inicial</a>
+</div>
+
+</body>
+</html>

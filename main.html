@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UniFood — Refeições para a Comunidade ISCTE-Sintra</title>
+  <meta name="description" content="UniFood — encontre refeições rápidas e económicas perto do ISCTE-Sintra. Para estudantes e restaurantes.">
+  <style>
+    :root{--accent:#048045;--muted:#6b6b6b}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, Helvetica, Arial;line-height:1.5;margin:0;color:#222}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:#fff;border-bottom:1px solid #eee}
+    .logo-area{display:flex;align-items:center;gap:10px}
+    .logo-area img{height:32px;width:32px;object-fit:contain}
+    .logo{font-weight:700;color:var(--accent)}
+    nav a{margin-left:18px;text-decoration:none;color:#333;font-weight:500}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .hero{display:flex;gap:32px;align-items:center;padding:36px 0}
+    .hero .col{flex:1}
+    .hero h1{font-size:28px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{border:1px solid #ddd;color:#333;background:white}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px}
+    .card{padding:18px;border:1px solid #eee;border-radius:10px;background:#fff;text-align:center}
+    .section{padding:36px 0;border-top:1px dashed #f0f0f0}
+    footer{padding:20px;text-align:center;color:var(--muted);font-size:14px}
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px}
+    .team-card img{width:100%;height:370px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid #eee;background:#fafafa}
+    .team-card p{text-align:justify;color:var(--muted)}{color:var(--muted)}
+    @media (max-width:720px){
+      .hero{flex-direction:column;align-items:flex-start}
+      nav{display:none}
+    }
+    .form-row{display:flex;gap:8px}
+    input,textarea,select{padding:10px;border:1px solid #ddd;border-radius:8px;width:100%}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <img src="UniFoods_logo.jpeg" alt="Logo UniFood (inserir mais tarde)">
+      <div class="logo">UniFood</div>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#estudantes">Estudantes</a>
+      <a href="#restaurantes">Restaurantes</a>
+      <a href="#equipa">Sobre a Equipa</a>
+      <a href="#contato">Contacto</a>
+    </nav>
+    <div>
+      <a class="btn btn-ghost" href="login.html">Entrar</a>
+      <a class="btn btn-primary" href="signup.html" style="margin-left:10px">Registar</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="sobre">
+      <div class="col">
+        <h1>Refeições rápidas e económicas para a comunidade ISCTE‑Sintra</h1>
+        <p>Encontre menus, compare preços, reserve e pague online. Uma plataforma pensada para estudantes e para os restaurantes locais.</p>
+        <p>
+          <a class="btn btn-primary" href="#estudantes">Sou estudante</a>
+          <a class="btn btn-ghost" href="#restaurantes">Sou restaurante</a>
+        </p>
+      </div>
+      <div class="col">
+        <div style="border-radius:12px;padding:18px;background:#fafafa;border:1px dashed #eee">
+          <h3 style="margin-top:0">Pesquisa rápida</h3>
+          <form onsubmit="event.preventDefault();alert('Pesquisa simulada')">
+            <div style="margin-bottom:8px"><input placeholder="Pesquisar restaurantes, pratos ou preços"></div>
+            <div style="display:flex;gap:8px"><select><option>Perto do ISCTE-Sintra</option></select><input placeholder="Distância (ex: 10min)"></div>
+            <div style="margin-top:10px"><button class="btn btn-primary">Procurar</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="estudantes">
+      <h2>Para Estudantes</h2>
+      <p style="color:var(--muted)">Refeições rápidas, económicas e sem filas — ideal para o ritmo académico.</p>
+      <div class="cards">
+        <div class="card">
+          <strong>Consultar menus</strong>
+          <p style="color:var(--muted)">Veja os pratos do dia e compare preços antes de decidir.</p>
+        </div>
+        <div class="card">
+          <strong>Reservas e pagamento online</strong>
+          <p style="color:var(--muted)">Reserve, pague e receba um QR code para levantar a refeição.</p>
+        </div>
+        <div class="card">
+          <strong>Promoções exclusivas</strong>
+          <p style="color:var(--muted)">Descontos e ofertas direcionadas à comunidade académica.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TMR 16/11/2025-->
+
+    <section class="section" id="restaurantes">
+      <h2>Para Restaurantes</h2>
+      <p style="color:var(--muted)">Ferramentas simples para gerir encomendas e aumentar clientes estudantis.</p>
+      <div class="cards">
+        <div class="card">
+          <strong>Gestão de menus</strong>
+          <p style="color:var(--muted)">Atualize pratos do dia e promoções em segundos.</p>
+        </div>
+        <div class="card">
+          <strong>Previsão de procura</strong>
+          <p style="color:var(--muted)">Veja reservas antecipadas para otimizar produção e reduzir desperdício.</p>
+        </div>
+        <div class="card">
+          <strong>Validação por QR code</strong>
+          <p style="color:var(--muted)">Processo rápido de levantamento na loja.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipa">
+      <h2>Sobre a Equipa</h2>
+      <p style="color:var(--muted)">Conhece os seis membros do projeto UniFood. Cada um contribui com competências únicas. (Adicionar descrições e fotos mais tarde.)</p>
+      <div class="team-grid">
+        <div class="card team-card"><img src="LR_ftf.jpg" alt="Foto Membro 1"><h4>Leonor Marques</h4><p>Contribui para o design e a criação das principais funcionalidades do site. Participou na elaboração do logótipo, slogan e proposta de valor.</p></div>
+        <div class="card team-card"><img src="SR_ftf.jpg" alt="Foto Membro 2"><h4>Sara Braz</h4><p>Colabora nas áreas de planeamento, marketing e desenvolvimento do site. Encarregou-se da identidade visual e das páginas principais, como o login e o menu.</p></div>
+        <div class="card team-card"><img src="HD_ftf.jpg" alt="Foto Membro 3"><h4>Henrique Duarte</h4><p>Integra a equipa técnica na implementação do site, na criação de wireframes, descrição técnica, reservas e geração de QR codes como desenvolvedor junior.</p></div>
+        <div class="card team-card"><img src="TR_ftf.jpg" alt="Foto Membro 4"><h4>Tomás Ribeiro</h4><p>Principal desenvolvedor da estrutura e funcionalidade do site, colaborando na criação de wireframes, reservas e QR codes. Faz parte da equipa técnica e de design.</p></div>
+        <div class="card team-card"><img src="Alex_ftf.jpg" alt="Foto Membro 5"><h4>Alexandre Liberato</h4><p>Apoiou a fase inicial de planeamento e desenvolve informações relacionadas com os restaurantes aderentes e o serviço de take away.</p></div>
+        <div class="card team-card"><img src="Dinis_ftf.jpg" alt="Foto Membro 6"><h4>Dinis Rafael</h4><p>Planea e implementa conteúdos informativos do site, nomeadamente sobre os restaurantes aderentes. Integra também a equipa de recolha e estruturação de dados.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <h2>Contacto</h2>
+      <p style="color:var(--muted)">Tem interesse em aderir ou tem dúvidas? Envie-nos uma mensagem!</p>
+      <form id="contact" onsubmit="event.preventDefault();alert('Mensagem enviada (simulada)')">
+        <div class="form-row"><input placeholder="Nome" required><input placeholder="Email" required></div>
+        <div style="margin-top:8px"><input placeholder="Assunto"></div>
+        <div style="margin-top:8px"><textarea rows="4" placeholder="Mensagem"></textarea></div>
+        <div style="margin-top:10px"><button class="btn btn-primary">Enviar</button></div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © UniFood — Projeto ISCTE‑Sintra • Desenvolvido por Grupo A3
+  </footer>
+</body>
+</html>
